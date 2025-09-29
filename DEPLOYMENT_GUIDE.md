@@ -93,8 +93,28 @@ After updating both the backend and frontend, test that they work correctly toge
 ### Common Issues and Solutions
 
 1. **MongoDB Connection Issues**
-   - Ensure your MongoDB URI is correct and includes your username and password
-   - Verify that your MongoDB Atlas IP whitelist includes Render's IP addresses (or set to "Allow access from anywhere")
+   **This is critical for deployment success!**
+   
+   - **IP Whitelisting in MongoDB Atlas**:
+     - Go to https://cloud.mongodb.com/ and log in to your account
+     - Navigate to your cluster -> Security -> Network Access
+     - Click "Add IP Address"
+     - For Render deployment, you have two options:
+       - **Option 1 (Recommended for Production)**: Add Render's IP addresses
+       - **Option 2 (For Testing/Development)**: Choose "Allow access from anywhere" (less secure but easier for testing)
+     - Click "Confirm" to save changes
+   
+   - **Verify your MongoDB connection string**:
+     - Ensure it's correctly formatted with your username, password, and cluster name
+     - It should look something like: `mongodb+srv://<username>:<password>@cluster0.mongodb.net/<databaseName>?retryWrites=true&w=majority`
+   
+   - **Test your MongoDB connection locally first**:
+     ```bash
+     cd server
+     node test-mongodb-connection.js
+     ```
+     This script will help you verify if your MongoDB connection works before deploying to Render
+   
    - Check Render logs for specific connection errors
 
 2. **CORS Errors**
