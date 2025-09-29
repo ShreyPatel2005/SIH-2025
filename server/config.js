@@ -1,5 +1,5 @@
-import path from 'path';
 import dotenv from 'dotenv';
+import path from 'path';
 
 // Load .env file for local development
 try {
@@ -27,15 +27,17 @@ export const config = {
   
   // CORS Configuration
   cors: {
-    origin: [
-      process.env.FRONTEND_URL || 'http://localhost:3000'
-    ],
-    credentials: true
+    origin: '*', // Allow all origins temporarily to fix network errors
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   },
   
   // API Configuration
   api: {
     version: process.env.API_VERSION || 'v1',
     prefix: '/api'
-  }
+  },
+  
+
 };

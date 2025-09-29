@@ -127,68 +127,7 @@ async function startServer() {
   }
 }
 
-// Initialize sample data if needed
-async function initializeSampleData() {
-  try {
-    const Terminology = (await import('./models/Terminology.js')).default;
-    const Mapping = (await import('./models/Mapping.js')).default;
-    
-    // Check if we already have data
-    const termCount = await Terminology.countDocuments();
-    
-    if (termCount === 0) {
-      console.log('📝 Initializing sample data...');
-      
-      // Sample NAMASTE terminology
-      const sampleTerms = [
-        { term: 'Vataja Jvara', code: 'NAM-A01.1', system: 'NAMASTE', description: 'Fever caused by Vata dosha imbalance', category: 'Fever' },
-        { term: 'Vataja Atisara', code: 'NAM-A01.2', system: 'NAMASTE', description: 'Diarrhea caused by Vata dosha imbalance', category: 'Digestive' },
-        { term: 'Pittaja Jvara', code: 'NAM-A02.1', system: 'NAMASTE', description: 'Fever caused by Pitta dosha imbalance', category: 'Fever' },
-        { term: 'Kaphaja Jvara', code: 'NAM-A03.1', system: 'NAMASTE', description: 'Fever caused by Kapha dosha imbalance', category: 'Fever' },
-        { term: 'Sannipata Jvara', code: 'NAM-A04.1', system: 'NAMASTE', description: 'Fever caused by all three doshas imbalance', category: 'Fever' },
-        { term: 'Qi-Phase Wind-Heat Pattern', code: 'JA20.0', system: 'ICD-11 TM2', description: 'Traditional medicine pattern', category: 'TM2' },
-        { term: 'Yang-Phase Heat Pattern', code: 'JA21.0', system: 'ICD-11 TM2', description: 'Traditional medicine pattern', category: 'TM2' },
-        { term: 'Fever of unknown origin', code: 'MG2A.01', system: 'ICD-11 Biomedicine', description: 'Fever without identifiable cause', category: 'Biomedicine' },
-        { term: 'Acute diarrhoea', code: 'DD90', system: 'ICD-11 Biomedicine', description: 'Acute diarrheal condition', category: 'Biomedicine' },
-        { term: 'Jvara', code: 'AYU-001', system: 'WHO Ayurveda', description: 'Ayurvedic fever classification', category: 'Ayurveda' }
-      ];
-      
-      await Terminology.insertMany(sampleTerms);
-      console.log(`✅ Inserted ${sampleTerms.length} sample terminology records`);
-      
-      // Sample mappings
-      const sampleMappings = [
-        {
-          sourceTerm: { term: 'Vataja Jvara', code: 'NAM-A01.1', system: 'NAMASTE' },
-          mappedTerms: [
-            { term: 'Qi-Phase Wind-Heat Pattern', code: 'JA20.0', system: 'ICD-11 TM2', confidence: 0.9, mappingType: 'exact' },
-            { term: 'Fever of unknown origin', code: 'MG2A.01', system: 'ICD-11 Biomedicine', confidence: 0.8, mappingType: 'broad' }
-          ],
-          mappingStatus: 'approved',
-          reviewedBy: 'system',
-          reviewedAt: new Date()
-        },
-        {
-          sourceTerm: { term: 'Vataja Atisara', code: 'NAM-A01.2', system: 'NAMASTE' },
-          mappedTerms: [
-            { term: 'Acute diarrhoea', code: 'DD90', system: 'ICD-11 Biomedicine', confidence: 0.9, mappingType: 'exact' }
-          ],
-          mappingStatus: 'approved',
-          reviewedBy: 'system',
-          reviewedAt: new Date()
-        }
-      ];
-      
-      await Mapping.insertMany(sampleMappings);
-      console.log(`✅ Inserted ${sampleMappings.length} sample mapping records`);
-    }
-  } catch (error) {
-    console.error('❌ Error initializing sample data:', error);
-  }
-}
+
 
 // Start the server
-startServer().then(() => {
-  // Initialize sample data after server starts
-  setTimeout(initializeSampleData, 2000);
-});
+startServer();

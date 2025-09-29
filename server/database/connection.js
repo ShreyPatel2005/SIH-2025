@@ -1,5 +1,5 @@
-import { config } from '../config.js';
 import mongoose from 'mongoose';
+import { config } from '../config.js';
 
 // MongoDB Atlas recommended connection options
 const DEFAULT_MONGODB_OPTIONS = {

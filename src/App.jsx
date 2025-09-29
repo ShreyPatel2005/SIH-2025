@@ -15,18 +15,23 @@ import {
 } from 'lucide-react'
 
 // API service configuration
-const API_BASE_URL = 'http://localhost:5000/api/v1'
+const API_BASE_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5000/api/v1'
+  : `${window.location.protocol}//${window.location.hostname}:5000/api/v1`
 
 // Real API service
 const apiService = {
   search: async (system, query) => {
     try {
+      console.log('Searching with params:', { system, query, API_BASE_URL });
       const response = await axios.get(`${API_BASE_URL}/terminology/search`, {
-        params: { system, query, limit: 20 }
+        params: { system, query, limit: 20 },
+        timeout: 10000
       })
       return response.data
     } catch (error) {
       console.error('Search API error:', error)
+      alert('Network error during search. Please try again.');
       // Fallback to empty results
       return { results: [] }
     }
@@ -78,17 +83,23 @@ const apiService = {
 
   uploadNAMASTE: async (file) => {
     try {
+      console.log('Uploading NAMASTE file:', file.name);
       const formData = new FormData()
       formData.append('file', file)
       
       const response = await axios.post(`${API_BASE_URL}/upload/namaste`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
+        },
+        timeout: 30000,
+        onUploadProgress: (progressEvent) => {
+          console.log('Upload progress:', Math.round((progressEvent.loaded * 100) / progressEvent.total));
         }
       })
       return response.data
     } catch (error) {
       console.error('NAMASTE upload error:', error)
+      alert('Network error during NAMASTE file upload. Please try again.');
       throw error
     }
   },
@@ -629,7 +640,7 @@ function App() {
                   setIsLoading(true)
                   try {
                     const result = await apiService.uploadNAMASTE(namasteFile)
-                    alert(`NAMASTE file uploaded successfully! Inserted: ${result.summary.inserted} records`)
+                    alert(`File Uploaded Successfully.`)
                     setNamasteFile(null)
                     // Refresh available systems after upload
                     await loadSystems()
@@ -675,8 +686,8 @@ function App() {
                 if (mappingFile) {
                   setIsLoading(true)
                   try {
-                    const result = await apiService.uploadMappings(mappingFile)
-                    alert(`Mappings file uploaded successfully! Inserted: ${result.summary.inserted} mappings`)
+                    await apiService.uploadMappings(mappingFile)
+                    alert(`Mappings file upload request submitted successfully.`)
                     setMappingFile(null)
                   } catch (error) {
                     alert(`Error uploading mappings file: ${error.response?.data?.error || error.message}`)

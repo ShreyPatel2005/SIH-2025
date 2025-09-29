@@ -8,13 +8,24 @@ import Terminology from '../models/Terminology.js';
 const router = express.Router();
 
 // Configure multer for file uploads
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, path.join(process.cwd(), 'uploads/'));
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+  }
+});
+
 const upload = multer({
-  dest: 'uploads/',
+  storage: storage,
   limits: {
     fileSize: 10 * 1024 * 1024, // 10MB limit
   },
   fileFilter: (req, file, cb) => {
-    if (file.mimetype === 'text/csv' || file.originalname.endsWith('.csv')) {
+    if (file.mimetype === 'text/csv' || 
+        file.originalname.endsWith('.csv') || 
+        file.mimetype === 'application/vnd.ms-excel') {
       cb(null, true);
     } else {
       cb(new Error('Only CSV files are allowed'), false);
@@ -27,18 +38,44 @@ const upload = multer({
 // POST /api/upload/namaste - Upload NAMASTE CSV file
 router.post('/namaste', upload.single('file'), async (req, res) => {
   try {
+    console.log('File upload request received:', req.file);
     if (!req.file) {
       return res.status(400).json({ error: 'No file uploaded' });
     }
     
-    const results = [];
-    const errors = [];
+    // Process in background and return immediately
+    res.status(200).json({ message: 'File upload received', fileId: req.file.filename });
     
+    // Process file in background
+    processNamasteFile(req.file).catch(err => {
+      console.error('Background processing error:', err);
+    });
+    
+  } catch (error) {
+    console.error('NAMASTE upload error:', error);
+    
+    // Clean up uploaded file if it exists
+    if (req.file && fs.existsSync(req.file.path)) {
+      fs.unlinkSync(req.file.path);
+    }
+    
+    if (!res.headersSent) {
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  }
+});
+
+// Function to process NAMASTE file in background
+async function processNamasteFile(file) {
+  const results = [];
+  const errors = [];
+  
+  try {
     // Process CSV file
     await new Promise((resolve, reject) => {
-      fs.createReadStream(req.file.path)
+      fs.createReadStream(file.path)
         .pipe(csv({
-          headers: ['term', 'code', 'description', 'category', 'system'], // Expected CSV headers with system
+          headers: ['term', 'code', 'description', 'category', 'system'],
           skipEmptyLines: true
         }))
         .on('data', (data) => {
@@ -48,7 +85,7 @@ router.post('/namaste', upload.single('file'), async (req, res) => {
             code: data.code?.trim(),
             description: data.description?.trim() || '',
             category: data.category?.trim() || '',
-            system: data.system?.trim() || 'NAMASTE', // Use system from CSV or default to NAMASTE
+            system: data.system?.trim() || 'NAMASTE',
             isActive: true,
             createdBy: 'csv-upload'
           };
@@ -90,30 +127,27 @@ router.post('/namaste', upload.single('file'), async (req, res) => {
     }
     
     // Clean up uploaded file
-    fs.unlinkSync(req.file.path);
+    fs.unlinkSync(file.path);
     
-    res.json({
-      message: 'NAMASTE data upload completed',
-      summary: {
-        totalRows: results.length,
-        inserted: insertedCount,
-        duplicates: duplicateCount,
-        errors: errors.length
-      },
-      errors: errors.slice(0, 10) // Return first 10 errors
+    console.log('NAMASTE upload completed:', {
+      totalRows: results.length,
+      inserted: insertedCount,
+      duplicates: duplicateCount,
+      errors: errors.length
     });
     
   } catch (error) {
     console.error('NAMASTE upload error:', error);
     
     // Clean up uploaded file if it exists
-    if (req.file && fs.existsSync(req.file.path)) {
-      fs.unlinkSync(req.file.path);
+    if (file && fs.existsSync(file.path)) {
+      fs.unlinkSync(file.path);
     }
     
-    res.status(500).json({ error: 'Internal server error' });
+    // Log error but don't attempt to send response since it's already been sent
+    console.error('Background processing failed:', error.message);
   }
-});
+};
 
 // POST /api/upload/terminology-api-config - Configure terminology API endpoint
 router.post('/terminology-api-config', async (req, res) => {
