@@ -20,7 +20,7 @@
 #### Server Structure
 - Root directory for the service: `server`
 - Build command: `npm install`
-- Start command: `npm start`
+- Start command: `node server.js`
 - Runtime: Node.js
 
 #### Health Check

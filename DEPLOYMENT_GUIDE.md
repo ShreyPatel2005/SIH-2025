@@ -33,7 +33,7 @@ This guide walks you through deploying the Ayush Terminology Portal backend on R
    - **Root Directory**: Enter `server` (this is where your server code is located)
    - **Runtime**: Select `Node`
    - **Build Command**: Enter `npm install`
-   - **Start Command**: Enter `npm start`
+   - **Start Command**: Enter `node server.js`
 
 4. **Set Up Environment Variables**
    Under the "Environment Variables" section, add these variables:
