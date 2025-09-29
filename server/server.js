@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 
 import { config } from './config.js';
 import database from './database/connection.js';
+import { testRouter } from './test-route.js';
 
 // Import routes
 import terminologyRoutes from './routes/terminology.js';
@@ -61,6 +62,12 @@ app.get('/', (req, res) => {
     },
     documentation: 'https://github.com/your-repo/ayush-terminology-portal'
   });
+});
+
+// Test routes for debugging
+app.use('/test-route', testRouter);
+app.get('/direct-test', (req, res) => {
+  res.json({ success: true, message: 'Direct test route works!' });
 });
 
 // Error handling middleware
