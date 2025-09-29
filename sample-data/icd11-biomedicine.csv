@@ -1,0 +1,57 @@
+term,code,description,category,system
+Fever of unknown origin,MG2A.01,Fever without identifiable cause,Fever,ICD-11 BIOMEDICINE
+Acute diarrhoea,DD90,Acute diarrheal condition,Digestive,ICD-11 BIOMEDICINE
+Chronic diarrhoea,DD91,Chronic diarrheal condition,Digestive,ICD-11 BIOMEDICINE
+Acute upper respiratory infection,CA40,Acute infection of upper respiratory tract,Respiratory,ICD-11 BIOMEDICINE
+Chronic obstructive pulmonary disease,CA22,Chronic lung disease causing breathing problems,Respiratory,ICD-11 BIOMEDICINE
+Pneumonia,CA40.0,Inflammation of the lungs,Respiratory,ICD-11 BIOMEDICINE
+Bronchitis,CA40.1,Inflammation of the bronchial tubes,Respiratory,ICD-11 BIOMEDICINE
+Asthma,CA23,Chronic inflammatory disease of the airways,Respiratory,ICD-11 BIOMEDICINE
+Hypertension,BA00,High blood pressure,Cardiovascular,ICD-11 BIOMEDICINE
+Coronary artery disease,BA80,Heart disease caused by narrowed arteries,Cardiovascular,ICD-11 BIOMEDICINE
+Heart failure,BD11,Heart unable to pump blood effectively,Cardiovascular,ICD-11 BIOMEDICINE
+Myocardial infarction,BA41,Heart attack,Cardiovascular,ICD-11 BIOMEDICINE
+Iron deficiency anaemia,3A00,Low iron levels causing reduced red blood cells,Hematological,ICD-11 BIOMEDICINE
+Type 2 diabetes mellitus,5A11,Diabetes caused by insulin resistance,Endocrine,ICD-11 BIOMEDICINE
+Type 1 diabetes mellitus,5A10,Diabetes caused by lack of insulin production,Endocrine,ICD-11 BIOMEDICINE
+Hypothyroidism,5A00,Underactive thyroid gland,Endocrine,ICD-11 BIOMEDICINE
+Hyperthyroidism,5A01,Overactive thyroid gland,Endocrine,ICD-11 BIOMEDICINE
+Hepatitis A,DC70,Inflammation of liver caused by hepatitis A virus,Hepatobiliary,ICD-11 BIOMEDICINE
+Hepatitis B,DC71,Inflammation of liver caused by hepatitis B virus,Hepatobiliary,ICD-11 BIOMEDICINE
+Hepatitis C,DC72,Inflammation of liver caused by hepatitis C virus,Hepatobiliary,ICD-11 BIOMEDICINE
+Jaundice,DB90,Yellowing of skin and eyes due to liver problems,Hepatobiliary,ICD-11 BIOMEDICINE
+Liver cirrhosis,DB93,Scarring of liver tissue,Hepatobiliary,ICD-11 BIOMEDICINE
+Acute gastritis,DD90.0,Inflammation of stomach lining,Digestive,ICD-11 BIOMEDICINE
+Chronic gastritis,DD90.1,Long-term inflammation of stomach lining,Digestive,ICD-11 BIOMEDICINE
+Peptic ulcer disease,DD90.2,Ulcers in stomach or duodenum,Digestive,ICD-11 BIOMEDICINE
+Gastroesophageal reflux disease,DD90.3,Stomach acid flowing back into esophagus,Digestive,ICD-11 BIOMEDICINE
+Inflammatory bowel disease,DD70,Chronic inflammation of digestive tract,Digestive,ICD-11 BIOMEDICINE
+Urinary tract infection,GC00,Infection of urinary system,Genitourinary,ICD-11 BIOMEDICINE
+Chronic kidney disease,GB61,Progressive loss of kidney function,Genitourinary,ICD-11 BIOMEDICINE
+Renal failure,GB62,Kidney unable to function properly,Genitourinary,ICD-11 BIOMEDICINE
+Dysuria,GC00.1,Painful or difficult urination,Genitourinary,ICD-11 BIOMEDICINE
+Hemorrhoids,DD90.4,Swollen veins in rectum and anus,Digestive,ICD-11 BIOMEDICINE
+Atopic dermatitis,EA80,Chronic skin inflammation causing itching,Dermatology,ICD-11 BIOMEDICINE
+Psoriasis,EA90,Chronic skin condition with red scaly patches,Dermatology,ICD-11 BIOMEDICINE
+Eczema,EA80.1,Inflammatory skin condition,Dermatology,ICD-11 BIOMEDICINE
+Acne,EA80.2,Skin condition with pimples and blackheads,Dermatology,ICD-11 BIOMEDICINE
+Conjunctivitis,9A60,Inflammation of the eye membrane,Ophthalmology,ICD-11 BIOMEDICINE
+Cataract,9B10,Clouding of the eye lens,Ophthalmology,ICD-11 BIOMEDICINE
+Glaucoma,9B70,Increased pressure in the eye,Ophthalmology,ICD-11 BIOMEDICINE
+Otitis media,AB30,Middle ear infection,ENT,ICD-11 BIOMEDICINE
+Hearing loss,AB50,Reduced ability to hear,ENT,ICD-11 BIOMEDICINE
+Tinnitus,AB51,Ringing in the ears,ENT,ICD-11 BIOMEDICINE
+Migraine,8D80,Severe headache with nausea,Neurological,ICD-11 BIOMEDICINE
+Tension headache,8D81,Headache caused by muscle tension,Neurological,ICD-11 BIOMEDICINE
+Epilepsy,8A60,Recurrent seizures,Neurological,ICD-11 BIOMEDICINE
+Stroke,8B20,Brain damage due to interrupted blood flow,Neurological,ICD-11 BIOMEDICINE
+Sciatica,FB53.1,Pain along the sciatic nerve,Musculoskeletal,ICD-11 BIOMEDICINE
+Osteoarthritis,FA00,Degenerative joint disease,Musculoskeletal,ICD-11 BIOMEDICINE
+Rheumatoid arthritis,FA20,Chronic inflammatory joint disease,Musculoskeletal,ICD-11 BIOMEDICINE
+Back pain,FB53,Pain in the back region,Musculoskeletal,ICD-11 BIOMEDICINE
+Obesity,5B80,Excessive body fat,Endocrine,ICD-11 BIOMEDICINE
+Underweight,5B81,Insufficient body weight,Endocrine,ICD-11 BIOMEDICINE
+Anxiety disorder,6B00,Excessive worry and fear,Mental Health,ICD-11 BIOMEDICINE
+Depressive disorder,6A70,Persistent feeling of sadness,Mental Health,ICD-11 BIOMEDICINE
+Insomnia,7A00,Difficulty falling or staying asleep,Sleep Disorders,ICD-11 BIOMEDICINE
+Sleep apnea,7A40,Breathing interruptions during sleep,Sleep Disorders,ICD-11 BIOMEDICINE

@@ -1,0 +1,87 @@
+term,code,description,category,system
+Jvara,AYU-001,Fever - elevation of body temperature,Fever,WHO AYURVEDA
+Atisara,AYU-002,Diarrhea - frequent loose bowel movements,Digestive,WHO AYURVEDA
+Kasa,AYU-003,Cough - reflex action to clear airways,Respiratory,WHO AYURVEDA
+Shwasa,AYU-004,Dyspnea - difficulty in breathing,Respiratory,WHO AYURVEDA
+Hridroga,AYU-005,Heart disease - disorders of the heart,Cardiovascular,WHO AYURVEDA
+Pandu,AYU-006,Anemia - deficiency of red blood cells,Hematological,WHO AYURVEDA
+Kamala,AYU-007,Jaundice - yellowing due to liver disorders,Hepatobiliary,WHO AYURVEDA
+Mutrakrichra,AYU-008,Dysuria - painful urination,Genitourinary,WHO AYURVEDA
+Arsha,AYU-009,Piles - swollen veins in anal region,Digestive,WHO AYURVEDA
+Kushtha,AYU-010,Skin diseases - various dermatological conditions,Dermatology,WHO AYURVEDA
+Netra Roga,AYU-011,Eye diseases - disorders affecting vision,Ophthalmology,WHO AYURVEDA
+Karna Roga,AYU-012,Ear diseases - disorders affecting hearing,ENT,WHO AYURVEDA
+Shiroroga,AYU-013,Head diseases - disorders of the head region,Neurological,WHO AYURVEDA
+Gridhrasi,AYU-014,Sciatica - pain along sciatic nerve,Musculoskeletal,WHO AYURVEDA
+Sandhivata,AYU-015,Joint pain - pain in joints,Musculoskeletal,WHO AYURVEDA
+Vataja Jvara,AYU-016,Fever caused by Vata dosha imbalance,Fever,WHO AYURVEDA
+Pittaja Jvara,AYU-017,Fever caused by Pitta dosha imbalance,Fever,WHO AYURVEDA
+Kaphaja Jvara,AYU-018,Fever caused by Kapha dosha imbalance,Fever,WHO AYURVEDA
+Sannipata Jvara,AYU-019,Fever caused by all doshas imbalance,Fever,WHO AYURVEDA
+Vataja Atisara,AYU-020,Diarrhea caused by Vata dosha imbalance,Digestive,WHO AYURVEDA
+Pittaja Atisara,AYU-021,Diarrhea caused by Pitta dosha imbalance,Digestive,WHO AYURVEDA
+Kaphaja Atisara,AYU-022,Diarrhea caused by Kapha dosha imbalance,Digestive,WHO AYURVEDA
+Sannipata Atisara,AYU-023,Diarrhea caused by all doshas imbalance,Digestive,WHO AYURVEDA
+Vataja Kasa,AYU-024,Cough caused by Vata dosha imbalance,Respiratory,WHO AYURVEDA
+Pittaja Kasa,AYU-025,Cough caused by Pitta dosha imbalance,Respiratory,WHO AYURVEDA
+Kaphaja Kasa,AYU-026,Cough caused by Kapha dosha imbalance,Respiratory,WHO AYURVEDA
+Sannipata Kasa,AYU-027,Cough caused by all doshas imbalance,Respiratory,WHO AYURVEDA
+Vataja Shwasa,AYU-028,Dyspnea caused by Vata dosha imbalance,Respiratory,WHO AYURVEDA
+Pittaja Shwasa,AYU-029,Dyspnea caused by Pitta dosha imbalance,Respiratory,WHO AYURVEDA
+Kaphaja Shwasa,AYU-030,Dyspnea caused by Kapha dosha imbalance,Respiratory,WHO AYURVEDA
+Sannipata Shwasa,AYU-031,Dyspnea caused by all doshas imbalance,Respiratory,WHO AYURVEDA
+Vataja Hridroga,AYU-032,Heart disease caused by Vata dosha imbalance,Cardiovascular,WHO AYURVEDA
+Pittaja Hridroga,AYU-033,Heart disease caused by Pitta dosha imbalance,Cardiovascular,WHO AYURVEDA
+Kaphaja Hridroga,AYU-034,Heart disease caused by Kapha dosha imbalance,Cardiovascular,WHO AYURVEDA
+Sannipata Hridroga,AYU-035,Heart disease caused by all doshas imbalance,Cardiovascular,WHO AYURVEDA
+Vataja Pandu,AYU-036,Anemia caused by Vata dosha imbalance,Hematological,WHO AYURVEDA
+Pittaja Pandu,AYU-037,Anemia caused by Pitta dosha imbalance,Hematological,WHO AYURVEDA
+Kaphaja Pandu,AYU-038,Anemia caused by Kapha dosha imbalance,Hematological,WHO AYURVEDA
+Sannipata Pandu,AYU-039,Anemia caused by all doshas imbalance,Hematological,WHO AYURVEDA
+Vataja Kamala,AYU-040,Jaundice caused by Vata dosha imbalance,Hepatobiliary,WHO AYURVEDA
+Pittaja Kamala,AYU-041,Jaundice caused by Pitta dosha imbalance,Hepatobiliary,WHO AYURVEDA
+Kaphaja Kamala,AYU-042,Jaundice caused by Kapha dosha imbalance,Hepatobiliary,WHO AYURVEDA
+Sannipata Kamala,AYU-043,Jaundice caused by all doshas imbalance,Hepatobiliary,WHO AYURVEDA
+Vataja Mutrakrichra,AYU-044,Dysuria caused by Vata dosha imbalance,Genitourinary,WHO AYURVEDA
+Pittaja Mutrakrichra,AYU-045,Dysuria caused by Pitta dosha imbalance,Genitourinary,WHO AYURVEDA
+Kaphaja Mutrakrichra,AYU-046,Dysuria caused by Kapha dosha imbalance,Genitourinary,WHO AYURVEDA
+Sannipata Mutrakrichra,AYU-047,Dysuria caused by all doshas imbalance,Genitourinary,WHO AYURVEDA
+Vataja Arsha,AYU-048,Piles caused by Vata dosha imbalance,Digestive,WHO AYURVEDA
+Pittaja Arsha,AYU-049,Piles caused by Pitta dosha imbalance,Digestive,WHO AYURVEDA
+Kaphaja Arsha,AYU-050,Piles caused by Kapha dosha imbalance,Digestive,WHO AYURVEDA
+Sannipata Arsha,AYU-051,Piles caused by all doshas imbalance,Digestive,WHO AYURVEDA
+Vataja Kushtha,AYU-052,Skin disease caused by Vata dosha imbalance,Dermatology,WHO AYURVEDA
+Pittaja Kushtha,AYU-053,Skin disease caused by Pitta dosha imbalance,Dermatology,WHO AYURVEDA
+Kaphaja Kushtha,AYU-054,Skin disease caused by Kapha dosha imbalance,Dermatology,WHO AYURVEDA
+Sannipata Kushtha,AYU-055,Skin disease caused by all doshas imbalance,Dermatology,WHO AYURVEDA
+Vataja Netra Roga,AYU-056,Eye disease caused by Vata dosha imbalance,Ophthalmology,WHO AYURVEDA
+Pittaja Netra Roga,AYU-057,Eye disease caused by Pitta dosha imbalance,Ophthalmology,WHO AYURVEDA
+Kaphaja Netra Roga,AYU-058,Eye disease caused by Kapha dosha imbalance,Ophthalmology,WHO AYURVEDA
+Sannipata Netra Roga,AYU-059,Eye disease caused by all doshas imbalance,Ophthalmology,WHO AYURVEDA
+Vataja Karna Roga,AYU-060,Ear disease caused by Vata dosha imbalance,ENT,WHO AYURVEDA
+Pittaja Karna Roga,AYU-061,Ear disease caused by Pitta dosha imbalance,ENT,WHO AYURVEDA
+Kaphaja Karna Roga,AYU-062,Ear disease caused by Kapha dosha imbalance,ENT,WHO AYURVEDA
+Sannipata Karna Roga,AYU-063,Ear disease caused by all doshas imbalance,ENT,WHO AYURVEDA
+Vataja Shiroroga,AYU-064,Head disease caused by Vata dosha imbalance,Neurological,WHO AYURVEDA
+Pittaja Shiroroga,AYU-065,Head disease caused by Pitta dosha imbalance,Neurological,WHO AYURVEDA
+Kaphaja Shiroroga,AYU-066,Head disease caused by Kapha dosha imbalance,Neurological,WHO AYURVEDA
+Sannipata Shiroroga,AYU-067,Head disease caused by all doshas imbalance,Neurological,WHO AYURVEDA
+Vataja Gridhrasi,AYU-068,Sciatica caused by Vata dosha imbalance,Musculoskeletal,WHO AYURVEDA
+Pittaja Gridhrasi,AYU-069,Sciatica caused by Pitta dosha imbalance,Musculoskeletal,WHO AYURVEDA
+Kaphaja Gridhrasi,AYU-070,Sciatica caused by Kapha dosha imbalance,Musculoskeletal,WHO AYURVEDA
+Sannipata Gridhrasi,AYU-071,Sciatica caused by all doshas imbalance,Musculoskeletal,WHO AYURVEDA
+Vataja Sandhivata,AYU-072,Joint pain caused by Vata dosha imbalance,Musculoskeletal,WHO AYURVEDA
+Pittaja Sandhivata,AYU-073,Joint pain caused by Pitta dosha imbalance,Musculoskeletal,WHO AYURVEDA
+Kaphaja Sandhivata,AYU-074,Joint pain caused by Kapha dosha imbalance,Musculoskeletal,WHO AYURVEDA
+Sannipata Sandhivata,AYU-075,Joint pain caused by all doshas imbalance,Musculoskeletal,WHO AYURVEDA
+Amlapitta,AYU-076,Acidity - excessive acid production in stomach,Digestive,WHO AYURVEDA
+Shotha,AYU-077,Swelling - abnormal accumulation of fluid,General,WHO AYURVEDA
+Medoroga,AYU-078,Obesity - excessive accumulation of fat,Endocrine,WHO AYURVEDA
+Prameha,AYU-079,Diabetes - excessive urination,Endocrine,WHO AYURVEDA
+Kshaya,AYU-080,Consumption - wasting disease,General,WHO AYURVEDA
+Rajayakshma,AYU-081,Tuberculosis - chronic lung disease,Respiratory,WHO AYURVEDA
+Visarpa,AYU-082,Erysipelas - spreading skin infection,Dermatology,WHO AYURVEDA
+Vishama Jvara,AYU-083,Irregular fever - intermittent fever,Fever,WHO AYURVEDA
+Dwandaja Jvara,AYU-084,Dual dosha fever - fever from two doshas,Fever,WHO AYURVEDA
+Tridoshaja Jvara,AYU-085,Triple dosha fever - fever from all doshas,Fever,WHO AYURVEDA
+Agantuka Jvara,AYU-086,Exogenous fever - fever from external causes,Fever,WHO AYURVEDA

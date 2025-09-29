@@ -1,0 +1,56 @@
+term,code,description,category,system
+Vataja Jvara,NAM-A01.1,Fever caused by Vata dosha imbalance,Fever,NAMASTE
+Vataja Atisara,NAM-A01.2,Diarrhea caused by Vata dosha imbalance,Digestive,NAMASTE
+Vataja Kasa,NAM-A01.3,Cough caused by Vata dosha imbalance,Respiratory,NAMASTE
+Vataja Shwasa,NAM-A01.4,Dyspnea caused by Vata dosha imbalance,Respiratory,NAMASTE
+Vataja Hridroga,NAM-A01.5,Heart disease caused by Vata dosha imbalance,Cardiovascular,NAMASTE
+Vataja Pandu,NAM-A01.6,Anemia caused by Vata dosha imbalance,Hematological,NAMASTE
+Vataja Kamala,NAM-A01.7,Jaundice caused by Vata dosha imbalance,Hepatobiliary,NAMASTE
+Vataja Mutrakrichra,NAM-A01.8,Dysuria caused by Vata dosha imbalance,Genitourinary,NAMASTE
+Vataja Arsha,NAM-A01.9,Piles caused by Vata dosha imbalance,Digestive,NAMASTE
+Vataja Kushtha,NAM-A02.1,Skin disease caused by Vata dosha imbalance,Dermatology,NAMASTE
+Vataja Netra Roga,NAM-A02.2,Eye disease caused by Vata dosha imbalance,Ophthalmology,NAMASTE
+Vataja Karna Roga,NAM-A02.3,Ear disease caused by Vata dosha imbalance,ENT,NAMASTE
+Vataja Shiroroga,NAM-A02.4,Headache caused by Vata dosha imbalance,Neurological,NAMASTE
+Vataja Gridhrasi,NAM-A02.5,Sciatica caused by Vata dosha imbalance,Musculoskeletal,NAMASTE
+Vataja Sandhivata,NAM-A02.6,Joint pain caused by Vata dosha imbalance,Musculoskeletal,NAMASTE
+Pittaja Jvara,NAM-B01.1,Fever caused by Pitta dosha imbalance,Fever,NAMASTE
+Pittaja Atisara,NAM-B01.2,Diarrhea caused by Pitta dosha imbalance,Digestive,NAMASTE
+Pittaja Kasa,NAM-B01.3,Cough caused by Pitta dosha imbalance,Respiratory,NAMASTE
+Pittaja Shwasa,NAM-B01.4,Dyspnea caused by Pitta dosha imbalance,Respiratory,NAMASTE
+Pittaja Hridroga,NAM-B01.5,Heart disease caused by Pitta dosha imbalance,Cardiovascular,NAMASTE
+Pittaja Pandu,NAM-B01.6,Anemia caused by Pitta dosha imbalance,Hematological,NAMASTE
+Pittaja Kamala,NAM-B01.7,Jaundice caused by Pitta dosha imbalance,Hepatobiliary,NAMASTE
+Pittaja Mutrakrichra,NAM-B01.8,Dysuria caused by Pitta dosha imbalance,Genitourinary,NAMASTE
+Pittaja Arsha,NAM-B01.9,Piles caused by Pitta dosha imbalance,Digestive,NAMASTE
+Pittaja Kushtha,NAM-B02.1,Skin disease caused by Pitta dosha imbalance,Dermatology,NAMASTE
+Pittaja Netra Roga,NAM-B02.2,Eye disease caused by Pitta dosha imbalance,Ophthalmology,NAMASTE
+Pittaja Karna Roga,NAM-B02.3,Ear disease caused by Pitta dosha imbalance,ENT,NAMASTE
+Pittaja Shiroroga,NAM-B02.4,Headache caused by Pitta dosha imbalance,Neurological,NAMASTE
+Pittaja Amlapitta,NAM-B02.5,Acidity caused by Pitta dosha imbalance,Digestive,NAMASTE
+Pittaja Shotha,NAM-B02.6,Swelling caused by Pitta dosha imbalance,General,NAMASTE
+Kaphaja Jvara,NAM-C01.1,Fever caused by Kapha dosha imbalance,Fever,NAMASTE
+Kaphaja Atisara,NAM-C01.2,Diarrhea caused by Kapha dosha imbalance,Digestive,NAMASTE
+Kaphaja Kasa,NAM-C01.3,Cough caused by Kapha dosha imbalance,Respiratory,NAMASTE
+Kaphaja Shwasa,NAM-C01.4,Dyspnea caused by Kapha dosha imbalance,Respiratory,NAMASTE
+Kaphaja Hridroga,NAM-C01.5,Heart disease caused by Kapha dosha imbalance,Cardiovascular,NAMASTE
+Kaphaja Pandu,NAM-C01.6,Anemia caused by Kapha dosha imbalance,Hematological,NAMASTE
+Kaphaja Kamala,NAM-C01.7,Jaundice caused by Kapha dosha imbalance,Hepatobiliary,NAMASTE
+Kaphaja Mutrakrichra,NAM-C01.8,Dysuria caused by Kapha dosha imbalance,Genitourinary,NAMASTE
+Kaphaja Arsha,NAM-C01.9,Piles caused by Kapha dosha imbalance,Digestive,NAMASTE
+Kaphaja Kushtha,NAM-C02.1,Skin disease caused by Kapha dosha imbalance,Dermatology,NAMASTE
+Kaphaja Netra Roga,NAM-C02.2,Eye disease caused by Kapha dosha imbalance,Ophthalmology,NAMASTE
+Kaphaja Karna Roga,NAM-C02.3,Ear disease caused by Kapha dosha imbalance,ENT,NAMASTE
+Kaphaja Shiroroga,NAM-C02.4,Headache caused by Kapha dosha imbalance,Neurological,NAMASTE
+Kaphaja Shotha,NAM-C02.5,Swelling caused by Kapha dosha imbalance,General,NAMASTE
+Kaphaja Medoroga,NAM-C02.6,Obesity caused by Kapha dosha imbalance,Endocrine,NAMASTE
+Sannipata Jvara,NAM-D01.1,Fever caused by all three doshas imbalance,Fever,NAMASTE
+Sannipata Atisara,NAM-D01.2,Diarrhea caused by all three doshas imbalance,Digestive,NAMASTE
+Sannipata Kasa,NAM-D01.3,Cough caused by all three doshas imbalance,Respiratory,NAMASTE
+Sannipata Shwasa,NAM-D01.4,Dyspnea caused by all three doshas imbalance,Respiratory,NAMASTE
+Sannipata Hridroga,NAM-D01.5,Heart disease caused by all three doshas imbalance,Cardiovascular,NAMASTE
+Sannipata Pandu,NAM-D01.6,Anemia caused by all three doshas imbalance,Hematological,NAMASTE
+Sannipata Kamala,NAM-D01.7,Jaundice caused by all three doshas imbalance,Hepatobiliary,NAMASTE
+Sannipata Kushtha,NAM-D01.8,Skin disease caused by all three doshas imbalance,Dermatology,NAMASTE
+Sannipata Shiroroga,NAM-D01.9,Headache caused by all three doshas imbalance,Neurological,NAMASTE
+Sannipata Sandhivata,NAM-D02.1,Joint pain caused by all three doshas imbalance,Musculoskeletal,NAMASTE

@@ -1,0 +1,55 @@
+source_system,source_code,source_term,target_system,target_code,target_term,mapping_type,confidence
+NAMASTE,NAM-A01.1,Vataja Jvara,WHO Ayurveda,AYU-016,Vataja Jvara,exact,1.0
+NAMASTE,NAM-A01.1,Vataja Jvara,ICD-11 Biomedicine,MG2A.01,Fever of unknown origin,broad,0.8
+NAMASTE,NAM-A01.2,Vataja Atisara,WHO Ayurveda,AYU-020,Vataja Atisara,exact,1.0
+NAMASTE,NAM-A01.2,Vataja Atisara,ICD-11 Biomedicine,DD90,Acute diarrhoea,exact,0.9
+NAMASTE,NAM-A01.3,Vataja Kasa,WHO Ayurveda,AYU-024,Vataja Kasa,exact,1.0
+NAMASTE,NAM-A01.3,Vataja Kasa,ICD-11 Biomedicine,CA40,Acute upper respiratory infection,broad,0.7
+NAMASTE,NAM-A01.4,Vataja Shwasa,WHO Ayurveda,AYU-028,Vataja Shwasa,exact,1.0
+NAMASTE,NAM-A01.4,Vataja Shwasa,ICD-11 Biomedicine,CA23,Asthma,broad,0.8
+NAMASTE,NAM-A01.5,Vataja Hridroga,WHO Ayurveda,AYU-032,Vataja Hridroga,exact,1.0
+NAMASTE,NAM-A01.5,Vataja Hridroga,ICD-11 Biomedicine,BD11,Heart failure,broad,0.8
+NAMASTE,NAM-A01.6,Vataja Pandu,WHO Ayurveda,AYU-036,Vataja Pandu,exact,1.0
+NAMASTE,NAM-A01.6,Vataja Pandu,ICD-11 Biomedicine,3A00,Iron deficiency anaemia,exact,0.9
+NAMASTE,NAM-A01.7,Vataja Kamala,WHO Ayurveda,AYU-040,Vataja Kamala,exact,1.0
+NAMASTE,NAM-A01.7,Vataja Kamala,ICD-11 Biomedicine,DB90,Jaundice,exact,0.9
+NAMASTE,NAM-A01.8,Vataja Mutrakrichra,WHO Ayurveda,AYU-044,Vataja Mutrakrichra,exact,1.0
+NAMASTE,NAM-A01.8,Vataja Mutrakrichra,ICD-11 Biomedicine,GC00,Urinary tract infection,broad,0.7
+NAMASTE,NAM-A01.9,Vataja Arsha,WHO Ayurveda,AYU-048,Vataja Arsha,exact,1.0
+NAMASTE,NAM-A01.9,Vataja Arsha,ICD-11 Biomedicine,DD90.4,Hemorrhoids,exact,0.9
+NAMASTE,NAM-B01.1,Pittaja Jvara,WHO Ayurveda,AYU-017,Pittaja Jvara,exact,1.0
+NAMASTE,NAM-B01.1,Pittaja Jvara,ICD-11 Biomedicine,MG2A.01,Fever of unknown origin,broad,0.8
+NAMASTE,NAM-B01.2,Pittaja Atisara,WHO Ayurveda,AYU-021,Pittaja Atisara,exact,1.0
+NAMASTE,NAM-B01.2,Pittaja Atisara,ICD-11 Biomedicine,DD90,Acute diarrhoea,exact,0.9
+NAMASTE,NAM-B01.3,Pittaja Kasa,WHO Ayurveda,AYU-025,Pittaja Kasa,exact,1.0
+NAMASTE,NAM-B01.3,Pittaja Kasa,ICD-11 Biomedicine,CA40.1,Bronchitis,broad,0.7
+NAMASTE,NAM-B01.4,Pittaja Shwasa,WHO Ayurveda,AYU-029,Pittaja Shwasa,exact,1.0
+NAMASTE,NAM-B01.4,Pittaja Shwasa,ICD-11 Biomedicine,CA22,Chronic obstructive pulmonary disease,broad,0.8
+NAMASTE,NAM-B01.5,Pittaja Hridroga,WHO Ayurveda,AYU-033,Pittaja Hridroga,exact,1.0
+NAMASTE,NAM-B01.5,Pittaja Hridroga,ICD-11 Biomedicine,BA80,Coronary artery disease,broad,0.8
+NAMASTE,NAM-B01.6,Pittaja Pandu,WHO Ayurveda,AYU-037,Pittaja Pandu,exact,1.0
+NAMASTE,NAM-B01.6,Pittaja Pandu,ICD-11 Biomedicine,3A00,Iron deficiency anaemia,exact,0.9
+NAMASTE,NAM-B01.7,Pittaja Kamala,WHO Ayurveda,AYU-041,Pittaja Kamala,exact,1.0
+NAMASTE,NAM-B01.7,Pittaja Kamala,ICD-11 Biomedicine,DB90,Jaundice,exact,0.9
+NAMASTE,NAM-C01.1,Kaphaja Jvara,WHO Ayurveda,AYU-018,Kaphaja Jvara,exact,1.0
+NAMASTE,NAM-C01.1,Kaphaja Jvara,ICD-11 Biomedicine,MG2A.01,Fever of unknown origin,broad,0.8
+NAMASTE,NAM-C01.2,Kaphaja Atisara,WHO Ayurveda,AYU-022,Kaphaja Atisara,exact,1.0
+NAMASTE,NAM-C01.2,Kaphaja Atisara,ICD-11 Biomedicine,DD91,Chronic diarrhoea,exact,0.8
+NAMASTE,NAM-C01.3,Kaphaja Kasa,WHO Ayurveda,AYU-026,Kaphaja Kasa,exact,1.0
+NAMASTE,NAM-C01.3,Kaphaja Kasa,ICD-11 Biomedicine,CA40.0,Pneumonia,broad,0.7
+NAMASTE,NAM-C01.4,Kaphaja Shwasa,WHO Ayurveda,AYU-030,Kaphaja Shwasa,exact,1.0
+NAMASTE,NAM-C01.4,Kaphaja Shwasa,ICD-11 Biomedicine,CA23,Asthma,broad,0.8
+NAMASTE,NAM-C01.5,Kaphaja Hridroga,WHO Ayurveda,AYU-034,Kaphaja Hridroga,exact,1.0
+NAMASTE,NAM-C01.5,Kaphaja Hridroga,ICD-11 Biomedicine,BD11,Heart failure,broad,0.8
+NAMASTE,NAM-C01.6,Kaphaja Pandu,WHO Ayurveda,AYU-038,Kaphaja Pandu,exact,1.0
+NAMASTE,NAM-C01.6,Kaphaja Pandu,ICD-11 Biomedicine,3A00,Iron deficiency anaemia,exact,0.9
+NAMASTE,NAM-C01.7,Kaphaja Kamala,WHO Ayurveda,AYU-042,Kaphaja Kamala,exact,1.0
+NAMASTE,NAM-C01.7,Kaphaja Kamala,ICD-11 Biomedicine,DB90,Jaundice,exact,0.9
+NAMASTE,NAM-D01.1,Sannipata Jvara,WHO Ayurveda,AYU-019,Sannipata Jvara,exact,1.0
+NAMASTE,NAM-D01.1,Sannipata Jvara,ICD-11 Biomedicine,MG2A.01,Fever of unknown origin,broad,0.8
+NAMASTE,NAM-D01.2,Sannipata Atisara,WHO Ayurveda,AYU-023,Sannipata Atisara,exact,1.0
+NAMASTE,NAM-D01.2,Sannipata Atisara,ICD-11 Biomedicine,DD91,Chronic diarrhoea,exact,0.8
+NAMASTE,NAM-D01.3,Sannipata Kasa,WHO Ayurveda,AYU-027,Sannipata Kasa,exact,1.0
+NAMASTE,NAM-D01.3,Sannipata Kasa,ICD-11 Biomedicine,CA40,Acute upper respiratory infection,broad,0.7
+NAMASTE,NAM-D01.4,Sannipata Shwasa,WHO Ayurveda,AYU-031,Sannipata Shwasa,exact,1.0
+NAMASTE,NAM-D01.4,Sannipata Shwasa,ICD-11 Biomedicine,CA22,Chronic obstructive pulmonary disease,broad,0.8
