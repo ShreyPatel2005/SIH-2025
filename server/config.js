@@ -1,11 +1,16 @@
 import dotenv from 'dotenv';
 import path from 'path';
-// Load .env file from the project root directory
-dotenv.config({ path: path.resolve(process.cwd(), '../.env') });
+// Load .env file for local development
+try {
+  dotenv.config({ path: path.resolve(process.cwd(), '../.env') });
+} catch (error) {
+  // On Render, environment variables will be set through the dashboard
+  console.log('No local .env file found, using environment variables');
+}
 
 export const config = {
   // MongoDB Configuration
-  // Note: MONGODB_URI must be set in the .env file
+  // Note: MONGODB_URI must be set in the .env file or Render dashboard
   mongodb: {
     uri: process.env.MONGODB_URI,
     options: {
@@ -22,7 +27,11 @@ export const config = {
   
   // CORS Configuration
   cors: {
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+    origin: [
+      process.env.FRONTEND_URL || 'http://localhost:3000',
+      // Add your Vercel frontend URL here
+      'https://your-vercel-frontend-url.vercel.app'
+    ],
     credentials: true
   },
   

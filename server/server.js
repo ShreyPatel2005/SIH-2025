@@ -99,8 +99,8 @@ async function startServer() {
       console.log(`📡 Server running on port ${config.server.port}`);
       console.log(`🌐 Environment: ${config.server.env}`);
       console.log(`📊 Database: ${database.isConnected() ? 'Connected' : 'Disconnected'}`);
-      console.log(`🔗 API Base URL: http://localhost:${config.server.port}${apiPrefix}`);
-      console.log(`📖 Health Check: http://localhost:${config.server.port}/health`);
+      console.log(`🔗 API Base URL: ${config.server.env === 'development' ? `http://localhost:${config.server.port}` : 'PRODUCTION_URL'}/api/v1`);
+      console.log(`📖 Health Check: ${config.server.env === 'development' ? `http://localhost:${config.server.port}` : 'PRODUCTION_URL'}/health`);
       console.log('=====================================\n');
     });
     
