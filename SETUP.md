@@ -37,13 +37,15 @@ Before you begin, ensure you have the following installed:
 
 ### Option 2: MongoDB Atlas (Cloud) ✅ **CONFIGURED**
 
-Your MongoDB Atlas cluster is already configured! The application will connect to:
+Your MongoDB Atlas cluster is already configured! The application will connect to the MongoDB URI specified in the `.env` file.
+
+The default connection string is:
 
 ```
 mongodb+srv://Shrey:gqW7H2aw8PBhTYAP@cluster0.q25cjkt.mongodb.net/ayush_terminology
 ```
 
-**No additional setup required** - the connection string is already configured in `server/config.js`.
+This string has been added to your `.env` file during setup. You can modify it if needed.
 
 ## Project Setup
 
@@ -57,9 +59,19 @@ npm run setup
 
 This will install dependencies for both frontend and backend.
 
-### 2. Environment Configuration ✅ **CONFIGURED**
+### 2. Environment Configuration
 
-Your MongoDB Atlas connection is already configured in `server/config.js`. No environment file setup needed!
+The project uses a `.env` file for configuration. This file has been created with default values including the MongoDB connection string.
+
+**Key Configuration Options:**
+- `MONGODB_URI`: Connection string for MongoDB
+- `PORT`: Port for the backend server (default: 5000)
+- `FRONTEND_URL`: URL of the frontend application (default: http://localhost:3000)
+
+**To modify these settings:**
+1. Open the `.env` file in the root directory
+2. Update the values as needed
+3. Save the file and restart the server
 
 ### 3. Start the Application
 

@@ -981,14 +981,7 @@ function App() {
                   <FileText className="h-4 w-4 mr-2" />
                   Download
                 </Button>
-                    // Clean up
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                  }}
-                >
-                  <FileText className="h-4 w-4 mr-2" />
-                  Download
-                </Button>
+                    
               </div>
             </div>
           </div>

@@ -10,6 +10,11 @@ class Database {
     try {
       console.log('Connecting to MongoDB...');
       
+      // Check if MongoDB URI is provided
+      if (!config.mongodb.uri) {
+        throw new Error('MONGODB_URI environment variable is not set');
+      }
+      
       this.connection = await mongoose.connect(config.mongodb.uri, config.mongodb.options);
       
       console.log(`✅ MongoDB connected successfully to: ${this.connection.connection.host}`);
@@ -35,6 +40,10 @@ class Database {
     }
   }
 
+  isConnected() {
+    return mongoose.connection.readyState === 1;
+  }
+
   async disconnect() {
     try {
       if (this.connection) {
@@ -44,14 +53,6 @@ class Database {
     } catch (error) {
       console.error('❌ Error disconnecting from MongoDB:', error.message);
     }
-  }
-
-  getConnection() {
-    return this.connection;
-  }
-
-  isConnected() {
-    return mongoose.connection.readyState === 1;
   }
 }
 

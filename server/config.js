@@ -1,11 +1,13 @@
 import dotenv from 'dotenv';
-
-dotenv.config();
+import path from 'path';
+// Load .env file from the project root directory
+dotenv.config({ path: path.resolve(process.cwd(), '../.env') });
 
 export const config = {
   // MongoDB Configuration
+  // Note: MONGODB_URI must be set in the .env file
   mongodb: {
-    uri: process.env.MONGODB_URI || 'mongodb+srv://Shrey:gqW7H2aw8PBhTYAP@cluster0.q25cjkt.mongodb.net/ayush_terminology?retryWrites=true&w=majority&appName=Cluster0',
+    uri: process.env.MONGODB_URI,
     options: {
       useNewUrlParser: true,
       useUnifiedTopology: true,
