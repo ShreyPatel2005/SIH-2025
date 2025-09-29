@@ -21,4 +21,3 @@ services:
         value: v1
     healthCheckPath: /health
     autoDeploy: true
-    dockerContext: .
