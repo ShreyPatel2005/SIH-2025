@@ -92,8 +92,8 @@ async function startServer() {
     // Connect to database
     await database.connect();
     
-    // Start HTTP server
-    const server = app.listen(config.server.port, () => {
+    // Start HTTP server - bind to 0.0.0.0 for Render deployment
+    const server = app.listen(config.server.port, '0.0.0.0', () => {
       console.log('\n🚀 Ayush Terminology Portal API Server');
       console.log('=====================================');
       console.log(`📡 Server running on port ${config.server.port}`);

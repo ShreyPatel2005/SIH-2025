@@ -7,7 +7,7 @@ services:
     branch: main # Replace with your branch name
     rootDir: server
     buildCommand: npm install
-    startCommand: npm run dev
+    startCommand: node server.js
     envVars:
       - key: NODE_ENV
         value: production

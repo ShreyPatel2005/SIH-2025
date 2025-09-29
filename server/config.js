@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import path from 'path';
+
 // Load .env file for local development
 try {
   dotenv.config({ path: path.resolve(process.cwd(), '../.env') });
@@ -14,8 +15,7 @@ export const config = {
   mongodb: {
     uri: process.env.MONGODB_URI,
     options: {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      // Removed deprecated options that are no longer needed for MongoDB driver 4.0+
     }
   },
   
@@ -28,9 +28,7 @@ export const config = {
   // CORS Configuration
   cors: {
     origin: [
-      process.env.FRONTEND_URL || 'http://localhost:3000',
-      // Add your Vercel frontend URL here
-      'https://your-vercel-frontend-url.vercel.app'
+      process.env.FRONTEND_URL || 'http://localhost:3000'
     ],
     credentials: true
   },
