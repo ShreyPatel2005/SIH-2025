@@ -116,22 +116,7 @@ const apiService = {
     }
   },
 
-  uploadMappings: async (file) => {
-    try {
-      const formData = new FormData()
-      formData.append('file', file)
-      
-      const response = await axios.post(`${API_BASE_URL}/upload/mappings`, formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      })
-      return response.data
-    } catch (error) {
-      console.error('Mappings upload error:', error)
-      throw error
-    }
-  },
+
 
   getSystems: async () => {
     try {
@@ -220,7 +205,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(false)
   const [copied, setCopied] = useState(false)
   const [namasteFile, setNamasteFile] = useState(null)
-  const [mappingFile, setMappingFile] = useState(null)
   const [icd11Endpoint, setIcd11Endpoint] = useState('')
   const [emrData, setEmrData] = useState({
     patientId: '',
@@ -658,50 +642,7 @@ function App() {
           </div>
         </Card>
 
-        {/* Mapping Upload */}
-        <Card className="p-6">
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-2">Upload Mappings CSV File</h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              Upload cross-system mappings between different coding systems
-            </p>
-          </div>
-          
-          <div className="space-y-4">
-            <div>
-              <Label htmlFor="mapping-file">Select Mappings CSV File</Label>
-              <Input
-                id="mapping-file"
-                type="file"
-                accept=".csv"
-                onChange={(e) => setMappingFile(e.target.files[0])}
-                className="mt-1"
-              />
-            </div>
-            
-            <Button 
-              className="w-full"
-              disabled={!mappingFile || isLoading}
-              onClick={async () => {
-                if (mappingFile) {
-                  setIsLoading(true)
-                  try {
-                    await apiService.uploadMappings(mappingFile)
-                    alert(`Mappings file upload request submitted successfully.`)
-                    setMappingFile(null)
-                  } catch (error) {
-                    alert(`Error uploading mappings file: ${error.response?.data?.error || error.message}`)
-                  } finally {
-                    setIsLoading(false)
-                  }
-                }
-              }}
-            >
-              <DatabaseZap className="h-4 w-4 mr-2" />
-              Upload Mappings
-            </Button>
-          </div>
-        </Card>
+
 
         {/* External API Configuration */}
         <Card className="p-6">

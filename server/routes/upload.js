@@ -33,8 +33,6 @@ const upload = multer({
   }
 });
 
-// Mapping upload option has been removed as per requirements
-
 // POST /api/upload/namaste - Upload NAMASTE CSV file
 router.post('/namaste', upload.single('file'), async (req, res) => {
   try {
