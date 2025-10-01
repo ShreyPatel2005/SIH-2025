@@ -1,5 +1,5 @@
 import express from 'express';
-import Mapping from '../models/Mapping.js';
+import Mapping from '../models/mapping.js';
 
 const router = express.Router();
 
