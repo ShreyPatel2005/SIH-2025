@@ -39,7 +39,8 @@ const apiService = {
 
   getMapping: async (code) => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/mapping/${code}`)
+      console.log('Getting mapping for code:', code);
+      const response = await axios.get(`${API_BASE_URL}/mapping/code/${code}`)
       return response.data
     } catch (error) {
       console.error('Mapping API error:', error)

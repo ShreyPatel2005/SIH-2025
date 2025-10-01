@@ -9,7 +9,7 @@ import { testRouter } from './test-route.js';
 
 // Import routes
 import terminologyRoutes from './routes/terminology.js';
-
+import mappingRoutes from './routes/mapping.js';
 import emrRoutes from './routes/emr.js';
 import uploadRoutes from './routes/upload.js';
 
@@ -44,7 +44,7 @@ app.get('/health', (req, res) => {
 const apiPrefix = `${config.api.prefix}/${config.api.version}`;
 
 app.use(`${apiPrefix}/terminology`, terminologyRoutes);
-
+app.use(`${apiPrefix}/mapping`, mappingRoutes);
 app.use(`${apiPrefix}/emr`, emrRoutes);
 app.use(`${apiPrefix}/upload`, uploadRoutes);
 
