@@ -1,6 +1,5 @@
 import express from 'express';
 import EMRData from '../models/EMRData.js';
-import Mapping from '../models/Mapping.js';
 import Terminology from '../models/Terminology.js';
 
 const router = express.Router();

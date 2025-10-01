@@ -17,7 +17,7 @@ import {
 // API service configuration
 const API_BASE_URL = window.location.hostname === 'localhost' 
   ? 'http://localhost:5000/api/v1'
-  : `${window.location.protocol}//${window.location.hostname}/api/v1`
+  : 'https://sih-2025-rrcx.onrender.com/api/v1'
 
 // Real API service
 const apiService = {
